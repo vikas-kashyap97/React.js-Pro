@@ -1,5 +1,5 @@
 ## Functions
-<ul>
+
   <li>useState : for increasing and decreasing the values</li>
   ```javascript
   function App() {
@@ -11,4 +11,3 @@
       onClick={removevalue}
       >Remove value</button>
   ```
-</ul>
