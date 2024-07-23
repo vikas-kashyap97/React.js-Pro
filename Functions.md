@@ -1,7 +1,7 @@
 ## Functions
 
   <li>useState : for increasing and decreasing the values</li>
-  ```
+  
   function App() {
   const [counter, setCounter] = useState(0)
   const removevalue = () => {
@@ -10,4 +10,4 @@
   <button
       onClick={removevalue}
       >Remove value</button>
-  ```
+  
