@@ -13,6 +13,10 @@ function App() {
     if (counter < 20) {
       setCounter(counter + 1);
     }
+    setCounter(prevCounter => prevCounter + 1);   // it is for direct jump to 4 number for interview question
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
   };
   const removevalue = () => {
     if (counter > 0) {
