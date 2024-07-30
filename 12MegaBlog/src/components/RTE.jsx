@@ -38,6 +38,7 @@ export default function RTE({name, control, label, defaultValue =""}) {
                 "code",
                 "help",
                 "wordcount",
+                "anchor",
             ],
             toolbar:
             "undo redo | blocks | image | bold italic forecolor | alignleft aligncenter bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent |removeformat | help",
