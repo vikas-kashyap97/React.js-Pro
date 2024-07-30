@@ -4,6 +4,7 @@ import {Controller } from 'react-hook-form';
 
 
 export default function RTE({name, control, label, defaultValue =""}) {
+  const apiKey = import.meta.env.VITE_APP_BLOG_API
   return (
     <div className='w-full'> 
     {label && <label className='inline-block mb-1 pl-1'>{label}</label>}
@@ -13,6 +14,7 @@ export default function RTE({name, control, label, defaultValue =""}) {
     control={control}
     render={({field: {onChange}}) => (
         <Editor
+        apiKey={apiKey}
         initialValue={defaultValue}
         init={{
             initialValue: defaultValue,
@@ -52,3 +54,4 @@ export default function RTE({name, control, label, defaultValue =""}) {
      </div>
   )
 }
+
