@@ -34,6 +34,7 @@ export class Service{
     }
 
     async updatePost(slug, {title, content, featuredImage, status}){
+        console.log("Updating document with ID:", slug);
         try {
             return await this.databases.updateDocument(
                 conf.appwriteDatabaseId,
@@ -107,7 +108,7 @@ export class Service{
             )
         } catch (error) {
             console.log("Appwrite serive :: uploadFile :: error", error);
-            return { success: false, error: error.message };
+            return false
         }
     }
 
